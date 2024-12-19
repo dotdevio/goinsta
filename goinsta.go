@@ -338,6 +338,7 @@ func (insta *Instagram) ExportConfig() ConfigFile {
 		Device:        insta.device,
 		TOTP:          insta.totp,
 		SessionNonce:  insta.session,
+		UserAgent:     insta.userAgent,
 	}
 
 	setHeaders := func(key, value interface{}) bool {

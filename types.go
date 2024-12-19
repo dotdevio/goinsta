@@ -21,6 +21,7 @@ type ConfigFile struct {
 	Device        Device            `json:"device"`
 	TOTP          *TOTP             `json:"totp"`
 	SessionNonce  string            `json:"session"`
+	UserAgent  string            	`json:"user_agent"`
 }
 
 type Device struct {
